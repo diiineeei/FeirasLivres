@@ -1,10 +1,9 @@
 package handlers
 
 import (
+	"github.com/diiineeei/FeirasLivres/rest/feiraslivres"
+	"github.com/diiineeei/FeirasLivres/sqlclient"
 	"github.com/gorilla/mux"
-
-	"testesrod/rest/feiraslivres"
-	"testesrod/sqlclient"
 
 	"net/http"
 )

@@ -1,7 +1,7 @@
 package feiraslivres
 
 import (
-	"testesrod/sqlclient"
+	"github.com/diiineeei/FeirasLivres/sqlclient"
 	"testing"
 )
 

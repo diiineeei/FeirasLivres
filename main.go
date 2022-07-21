@@ -1,13 +1,13 @@
 package main
 
 import (
+	"github.com/diiineeei/FeirasLivres/handlers"
+	"github.com/diiineeei/FeirasLivres/logs"
+	"github.com/diiineeei/FeirasLivres/sqlclient"
+
 	"net/http"
 	"os"
 	"time"
-
-	"testesrod/handlers"
-	"testesrod/logs"
-	"testesrod/sqlclient"
 )
 
 const (

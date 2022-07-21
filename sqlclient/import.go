@@ -1,8 +1,9 @@
 package sqlclient
 
 import (
+	"github.com/diiineeei/FeirasLivres/logs"
+	"github.com/diiineeei/FeirasLivres/utils"
 	_ "github.com/go-sql-driver/mysql"
-	"testesrod/utils"
 
 	"bytes"
 	"database/sql"
@@ -13,7 +14,6 @@ import (
 	"log"
 	"net/http"
 	"sync"
-	"testesrod/logs"
 	"time"
 )
 

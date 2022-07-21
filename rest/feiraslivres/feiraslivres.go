@@ -1,13 +1,13 @@
 package feiraslivres
 
 import (
+	"github.com/diiineeei/FeirasLivres/logs"
+	"github.com/diiineeei/FeirasLivres/sqlclient"
+	"github.com/diiineeei/FeirasLivres/utils"
+
 	"bytes"
 	"database/sql"
 	"encoding/json"
-	"testesrod/logs"
-	"testesrod/sqlclient"
-	"testesrod/utils"
-
 	"io/ioutil"
 	"net/http"
 )
