@@ -1,0 +1,221 @@
+_type: export
+__export_format: 4
+__export_date: 2022-07-21T17:00:23.276Z
+__export_source: insomnia.desktop.app:v2022.4.2
+resources:
+  - _id: req_bd15ffffdee84621aef369e77815bbe7
+    parentId: wrk_f04d7063758c4d79a80570a9ded9953c
+    modified: 1658421778583
+    created: 1656525339398
+    url: localhost/nova-feira
+    name: Adiciona Feira
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"longitude": -46550164,
+        	"latitude": -23558733,
+        	"setcens": 355030885000091,
+        	"areap": 3550308005040,
+        	"coddist": 87,
+        	"distrito": "VILA FORMOSA",
+        	"codsubpref": 26,
+        	"subprefe": "ARICANDUVA-FORMOSA-CARRAO",
+        	"regiao5": "Leste",
+        	"regiao8": "Leste 1",
+        	"nome_feira": "VILA FORMOSA",
+        	"registro": "4041-0",
+        	"logradouro": "RUA MARAGOJIPE",
+        	"numero": "S/N",
+        	"bairro": "VL FORMOSA",
+        	"referencia": "TV RUA PRETORIA"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_1b95520e26964d8f9c1f2bb019de9cfa
+    authentication: {}
+    metaSortKey: -1656525339398
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_f04d7063758c4d79a80570a9ded9953c
+    parentId: null
+    modified: 1656525336387
+    created: 1656525336387
+    name: POC
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_fc64324fa6dd43958dc9e1d8bbf86a05
+    parentId: wrk_f04d7063758c4d79a80570a9ded9953c
+    modified: 1658422276279
+    created: 1658387089214
+    url: localhost/altera-feira
+    name: Atualiza Feira
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": 2,
+        	"longitude": -46550164,
+        	"latitude": -23558733,
+        	"setcens": 355030885000091,
+        	"areap": 3550308005040,
+        	"coddist": 87,
+        	"distrito": "VILA FORMOSA",
+        	"codsubpref": 26,
+        	"subprefe": "ARICANDUVA-FORMOSA-CARRAO",
+        	"regiao5": "Leste",
+        	"regiao8": "Leste 1",
+        	"nome_feira": "VILA FORMOSA",
+        	"registro": "4041-0",
+        	"logradouro": "RUA MARAGOJIPE",
+        	"numero": "S/N",
+        	"bairro": "VL FORMOSA",
+        	"referencia": "TV RUA PRETORIA"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_1b95520e26964d8f9c1f2bb019de9cfa
+    authentication: {}
+    metaSortKey: -1656524785992.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_fe48c729a3c14454b83115dea4936d74
+    parentId: wrk_f04d7063758c4d79a80570a9ded9953c
+    modified: 1658422288179
+    created: 1658386565564
+    url: localhost/exclui-feira
+    name: Exclui Feira
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": 1
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_1b95520e26964d8f9c1f2bb019de9cfa
+    authentication: {}
+    metaSortKey: -1656524232587.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_575a87d6457b4ed294deccbe5c907cfa
+    parentId: wrk_f04d7063758c4d79a80570a9ded9953c
+    modified: 1658422300589
+    created: 1658421640014
+    url: localhost/seleciona-feira
+    name: Seleciona Feira
+    description: ""
+    method: GET
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params:
+        - id: pair_f70cc4383e654c7d89117935e1d50400
+          name: distrito
+          value: VILA FORMOSA
+          description: ""
+          disabled: false
+        - id: pair_1c12dc7a378e4af586db61a72892df0b
+          name: regiao5
+          value: ""
+          description: ""
+        - id: pair_d7d33fce4e004a558f9e6b038d1c1d6c
+          name: nome_feira
+          value: ""
+          description: ""
+        - id: pair_b93cf7f711654b5383afe11066b99315
+          name: bairro
+          value: ""
+          description: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+        id: pair_12d1136c13ba42eca690d7f7d437590c
+    authentication: {}
+    metaSortKey: -1656523679182.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b141655b977c4f57876d30fd58477fb5
+    parentId: wrk_f04d7063758c4d79a80570a9ded9953c
+    modified: 1658422751391
+    created: 1658386021031
+    url: localhost/importar
+    name: Importat Dados
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1656523125777
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_128f83c31b7377bb1c35cac0f61dd7d9163ec117
+    parentId: wrk_f04d7063758c4d79a80570a9ded9953c
+    modified: 1656525336401
+    created: 1656525336401
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1656525336401
+    _type: environment
+  - _id: jar_128f83c31b7377bb1c35cac0f61dd7d9163ec117
+    parentId: wrk_f04d7063758c4d79a80570a9ded9953c
+    modified: 1656525336402
+    created: 1656525336402
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_7bea40ed985c4c70b4ac2cbde20e7eee
+    parentId: wrk_f04d7063758c4d79a80570a9ded9953c
+    modified: 1656525336398
+    created: 1656525336398
+    fileName: POC
+    contents: ""
+    contentType: yaml
+    _type: api_spec
