@@ -1,0 +1,21 @@
+version: '3'
+services:
+  mysql:
+    build:
+      context: sqlclient
+    container_name: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_USER=rodinei
+      - MYSQL_PASSWORD=rodinei
+      - MYSQL_DATABASE=rodinei
+      - MYSQL_ROOT_PASSWORD=rodinei
+
+  golang:
+    build: .
+    container_name: golang
+    ports:
+      - "80:8888"
+    depends_on:
+      - "mysql"
