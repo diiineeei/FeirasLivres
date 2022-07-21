@@ -3,9 +3,11 @@ package main
 import (
 	"net/http"
 	"os"
+	"time"
+
 	"testesrod/handlers"
 	"testesrod/logs"
-	"time"
+	"testesrod/sqlclient"
 )
 
 const (
@@ -15,6 +17,15 @@ const (
 	readHeaderTimeout = 10 * time.Second
 	readTimeout       = 10 * time.Second
 )
+
+func init() {
+	time.Sleep(time.Second * 5)
+	err := sqlclient.CreateTable()
+	if err != nil {
+		panic(err)
+	}
+
+}
 
 func main() {
 	Port := os.Getenv("PORT")
