@@ -8,7 +8,8 @@ import (
 
 const (
 	MaxSQLConnections = 50
-	defaultDataSource = "root:rodinei@tcp(mysql:3306)/rodinei"
+	//defaultDataSource = "root:rodinei@tcp(mysql:3306)/rodinei"
+	defaultDataSource = "root:rodinei@tcp(127.0.0.1:3306)/rodinei"
 )
 
 func Connect() (*sql.DB, error) {
