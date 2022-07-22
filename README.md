@@ -1,11 +1,11 @@
 # FeirasLivres
 API que expõe os dados disponíveis de Feiras Livres
 
-As requisições demonstradas abaixo podem ser importadas para o aplicativo do Insomnia ou Algum outro compativel atraves do botão abaixo
+As requisições demonstradas abaixo podem ser importadas para o aplicativo do Insomnia ou Algum outro compatível através do botão abaixo
 
 [![Clique aqui para importar as requisições do Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Feiras%20Livres&uri=https%3A%2F%2Fgithub.com%2Fdiiineeei%2FFeirasLivres%2Fblob%2Fmain%2FInsomnia_FeirasLivres.yaml)
 
-#### Para Adicionar Uma Nova Feira Você deve fazer uma requisição enviando um Json como no modelo solicitado abaixo
+#### Para adicionar uma nova feira você deve fazer uma requisição enviando um Json como no modelo solicitado abaixo
 ![Adiciona Nova Feira](doc/NovaFeira.png)
 
 Modelo de Json
